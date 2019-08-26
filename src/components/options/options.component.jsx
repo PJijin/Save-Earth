@@ -30,7 +30,7 @@ export default function Options({ changeSettings, toggleMode, currentMode: { val
 	return (
 		<div className="options">
 			<h1>
-				<Earth width="22px" /> Save Earth
+				<Earth width="22px" /> Save Earth, 🏡 Save Home
 			</h1>
 			<p className="toggle-mode pointer" onClick={toggleMode}>
 				{value ? (
