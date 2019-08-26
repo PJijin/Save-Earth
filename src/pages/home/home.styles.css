@@ -201,6 +201,8 @@ a {
 
 .footer {
 	margin-bottom: 40px;
+	justify-content: space-between;
+	align-items: center;
 	margin-top: 40px;
 }
 .footer a {
