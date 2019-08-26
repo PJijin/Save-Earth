@@ -207,6 +207,18 @@ a {
 	margin: 40px 0;
 }
 
+.tips .container {
+	margin-top: 50px;
+}
+
+.tips li div {
+	font-family: monospace;
+	margin-top: 5px;
+}
+
+.tips li {
+	margin: 10px 0;
+}
 .footer {
 	margin-bottom: 40px;
 	justify-content: space-between;

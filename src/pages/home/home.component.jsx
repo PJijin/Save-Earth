@@ -12,8 +12,8 @@ import Facts from '../../components/facts/facts.component';
 import Footer from '../../components/footer/footer.component';
 import Products from '../../components/products/products.component';
 import NGO from '../../components/ngo/ngo.component';
-import { ReactComponent as Change } from './change.svg';
 import './home.styles.css';
+import Tips from '../../components/tips/tips.components';
 
 export default function Home() {
 	const [settings, setSettings] = useState(defaultSettings);
@@ -32,12 +32,7 @@ export default function Home() {
 			<Facts />
 			<NGO />
 			<Products />
-			<div className="flex">
-				<Change width="350px" />
-				<div className="container">
-					<div className="sub-heading"> Take Action, Save Home</div>
-				</div>
-			</div>
+			<Tips />
 
 			<Footer />
 		</SettingsContext.Provider>
