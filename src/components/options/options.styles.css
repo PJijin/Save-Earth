@@ -1,0 +1,60 @@
+.industryOptions .input-range__track--active {
+	background: #aab8c1;
+}
+
+.industryOptions .input-range__slider {
+	background: url('./icons/factory.svg') no-repeat;
+	border: 0px;
+	padding: 7px;
+	border-radius: 0;
+	margin-top: -25px;
+}
+
+.vehicleOptions .input-range__track--active {
+	background: #646b70;
+}
+
+.vehicleOptions .input-range__slider {
+	background: url('./icons/car.svg') no-repeat;
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+
+	border: 0px;
+	padding: 7px;
+	border-radius: 0;
+	margin-top: -25px;
+}
+
+.treeOptions .input-range__track--active {
+	background: #662113;
+}
+
+.treeOptions .input-range__slider {
+	background: url('./icons/tree.svg') no-repeat;
+	border: 0px;
+	border-radius: 0;
+	padding: 7px;
+	margin-top: -18px;
+}
+.input-range__label-container {
+	left: 0;
+}
+
+.input-range__label--value {
+	position: absolute;
+	top: 1rem;
+}
+.input-range__slider-container > .input-range__label .input-range__label--value > .input-range__label-container {
+	left: 0;
+	top: 50px;
+}
+
+.input-range__label--min .input-range__label-container {
+	top: -23px;
+	left: -28px;
+}
+
+.input-range__label--max .input-range__label-container {
+	top: -23px;
+	left: 59px;
+}
