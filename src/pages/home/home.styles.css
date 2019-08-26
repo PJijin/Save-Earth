@@ -4,7 +4,7 @@ body[class='dark-mode'] {
 	--secondary-hover: #3c4859;
 	--facts-bg: #090b10;
 	--plain: #1a1c25;
-
+	--inverted-text-color: #212121;
 	--text-color: #fff;
 	--background-color: #333;
 	--background-light-color: #0f111a;
@@ -16,6 +16,7 @@ body[class='light-mode'] {
 	--primary-dark: #10a5e8;
 	--facts-bg: #edf0f2;
 	--plain: #ffffff;
+	--inverted-text-color: #212121;
 
 	--secondary-hover: #e9e4e4;
 	--text-color: #333;
@@ -170,6 +171,13 @@ a {
 .stats .flex {
 	flex: 1;
 	padding: 0 1rem;
+}
+
+.warning {
+	padding: 1rem;
+	color: var(--inverted-text-color);
+	background: #faf199;
+	border: 3px dotted var(--background-light-color);
 }
 
 .app .options,

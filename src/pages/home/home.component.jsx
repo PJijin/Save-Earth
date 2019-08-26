@@ -35,7 +35,7 @@ export default function Home() {
 			<div className="flex">
 				<Change width="350px" />
 				<div className="container">
-					<div className="sub-heading">Take Action, Save Home</div>
+					<div className="sub-heading"> Take Action, Save Home</div>
 				</div>
 			</div>
 

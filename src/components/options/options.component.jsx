@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
-import { ReactComponent as Earth } from './icons/earth.svg';
 import { Sun, Moon } from 'react-feather';
+import { ReactComponent as Earth } from './icons/earth.svg';
+import { ReactComponent as Warning } from './icons/warning.svg';
 
 import './options.styles.css';
 
@@ -10,6 +11,7 @@ export default function Options({ changeSettings, toggleMode, currentMode: { val
 	const [trees, setTrees] = useState(5);
 	const [vehicles, setVehicles] = useState(5);
 	const [industry, setIndustry] = useState(5);
+	const [warning, setWarning] = useState(false);
 
 	const lifeSpan = 75 - Math.ceil((trees / 100) * 15 + (vehicles / 100) * 15 + (industry / 100) * 15);
 	const addAnimation = anime => {
@@ -18,19 +20,25 @@ export default function Options({ changeSettings, toggleMode, currentMode: { val
 	};
 
 	if (trees === 100 && vehicles === 100 && industry === 100) {
-		addAnimation('square 100s linear infinite alternate');
-		setTimeout(() => {
-			addAnimation('scale 100s linear infinite alternate');
-		}, 3000);
-		setTimeout(() => {
-			addAnimation('');
-		}, 5000);
+		if (warning === false) {
+			setWarning(true);
+			setTimeout(() => {
+				addAnimation('square 100s linear infinite alternate');
+				setTimeout(() => {
+					addAnimation('scale 100s linear infinite alternate');
+				}, 3000);
+				setTimeout(() => {
+					setWarning(false);
+					addAnimation('');
+				}, 5000);
+			}, 2000);
+		}
 	}
 
 	return (
 		<div className="options">
 			<h1>
-				<Earth width="22px" /> Save Earth, 🏡 Save Home
+				<Earth width="22px" /> Save Earth
 			</h1>
 			<p className="toggle-mode pointer" onClick={toggleMode}>
 				{value ? (
@@ -43,6 +51,12 @@ export default function Options({ changeSettings, toggleMode, currentMode: { val
 					</span>
 				)}
 			</p>
+
+			{warning && (
+				<div className="warning">
+					<Warning width="14px" /> You are under Cyclone Prone Area!!! Refresh Page To Escape
+				</div>
+			)}
 
 			<div className="option treeOptions">
 				<InputRange
