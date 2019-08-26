@@ -29,10 +29,10 @@ export default function Home() {
 				<Results settings={settings}></Results>
 			</div>
 			<Stats />
+			<Tips />
 			<Facts />
 			<NGO />
 			<Products />
-			<Tips />
 
 			<Footer />
 		</SettingsContext.Provider>
