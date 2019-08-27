@@ -25,9 +25,10 @@ export default function Options({ changeSettings, toggleMode, currentMode: { val
 			setTimeout(() => {
 				addAnimation('square 100s linear infinite alternate');
 				setTimeout(() => {
-					addAnimation('scale 100s linear infinite alternate');
+					addAnimation('drop-animation  100s linear infinite alternate');
 				}, 3000);
 				setTimeout(() => {
+					document.location.reload(true);
 					setWarning(false);
 					addAnimation('');
 				}, 5000);

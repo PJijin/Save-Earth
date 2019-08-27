@@ -50,12 +50,24 @@ a {
 .flex {
 	display: flex;
 }
+.flex-1 div {
+	flex: 1;
+}
 .container {
 	margin: 0 auto;
 	width: 60%;
 }
 .ml-20 {
 	margin-left: 20px;
+}
+.comparison .fact p {
+	display: flex;
+}
+.comparison .fact svg {
+	margin-left: 10px;
+}
+.ml-5 {
+	margin-left: 5px;
 }
 
 .prediction {
@@ -524,17 +536,29 @@ a {
 	}
 }
 
-@keyframes scale {
-	100% {
-		transform: scale(0);
-		transform-origin: 50% 50%;
+@keyframes scaleDrop {
+	0% {
+		opacity: 0;
 	}
 	50% {
 		transform: scale(1);
 		transform-origin: 50% 50%;
 	}
-	0% {
+	100% {
+		transform: scale(0);
+		transform-origin: 50% 50%;
+	}
+}
+
+@keyframes drop-animation {
+	from {
 		opacity: 0;
+		transform: translateY(0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(500px);
 	}
 }
 
