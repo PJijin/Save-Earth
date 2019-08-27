@@ -19,11 +19,11 @@
 			"dest": "/static/$1"
 		},
 		{
-			"src": "/icons/(.*)",
+			"src": "/images/(.*)",
 			"headers": {
 				"cache-control": "s-maxage=31536000,immutable"
 			},
-			"dest": "/icons/$1"
+			"dest": "/images/$1"
 		},
 		{
 			"src": "/favicon.ico",
