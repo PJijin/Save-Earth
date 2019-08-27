@@ -15,6 +15,7 @@ import NGO from '../../components/ngo/ngo.component';
 import './home.styles.css';
 import Tips from '../../components/tips/tips.components';
 import Comparison from '../../components/comparison/comparison.componenet';
+import Challenge from '../../components/challenge/challenge.component';
 
 export default function Home() {
 	const [settings, setSettings] = useState(defaultSettings);
@@ -31,6 +32,7 @@ export default function Home() {
 			</div>
 			<Stats />
 			<Tips />
+			<Challenge />
 			<Comparison />
 			<Facts />
 			<NGO />

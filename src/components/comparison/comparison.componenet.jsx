@@ -19,7 +19,7 @@ export default function Comparison() {
 		<div className="flex comparison flex-1 container">
 			<div>
 				<div className="sub-heading">
-					<Dark width="24px" /> Most Polluted Cities In the World
+					<Dark width="24px" /> Most Polluted Cities in The World
 				</div>
 				<div className="fact">
 					<p>
@@ -53,7 +53,7 @@ export default function Comparison() {
 			</div>
 			<div className="ml-5">
 				<div className="sub-heading">
-					<Clean width="24px" /> Most Eco Friendly Cities In the World
+					<Clean width="24px" /> Most Eco-Friendly Cities in The World
 				</div>
 				<div className="fact">
 					<p>
@@ -68,9 +68,9 @@ export default function Comparison() {
 					<p>
 						Portland <US width="18px" />
 					</p>
-					<p>San francisco</p>
+					<p>San Francisco</p>
 					<p>
-						Cape town <ZA width="18px" />
+						Cape Town <ZA width="18px" />
 					</p>
 					<p>
 						Helsinki <FI width="18px" />

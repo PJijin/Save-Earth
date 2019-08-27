@@ -70,6 +70,10 @@ a {
 	margin-left: 5px;
 }
 
+.ml-10 {
+	margin-left: 10px;
+}
+
 .prediction {
 	text-align: center;
 	border-radius: 4px;
@@ -218,7 +222,29 @@ a {
 .sub-heading {
 	margin: 40px 0;
 }
+.challenge ol {
+	font-family: monospace;
+}
+.challenge b {
+	font-family: 'Concert One', cursive;
+	font-size: 12px;
+}
 
+.challenge ol li {
+	margin: 20px 0;
+}
+
+.shareBtn {
+	background: var(--background-color);
+	padding: 0.5rem;
+	border-radius: 5px;
+	display: flex;
+	margin: 5px;
+}
+
+.shareBtn span {
+	margin-left: 10px;
+}
 .tips .container {
 	margin-top: 50px;
 }
@@ -257,13 +283,19 @@ a {
 		margin: 45px 0px;
 	}
 	#wraper {
-		display: none;
+		top: 546px !important;
+		width: 340px !important;
+		margin-left: 11px !important;
 	}
 	.fact-heading,
 	.sub-heading {
 		padding-left: 1rem;
 		padding-right: 20px;
 		padding-bottom: 1rem;
+	}
+
+	.icon-margin {
+		margin-right: 10px;
 	}
 	.wrap {
 		margin: unset;
