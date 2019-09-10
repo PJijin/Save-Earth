@@ -4,6 +4,8 @@
 
 Project URL: http://save-earth.now.sh
 
+Fixathon.io Project
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome! 😍
