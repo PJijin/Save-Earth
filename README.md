@@ -1,6 +1,11 @@
 ## 🌍 Save-Earth
 
-[![Save Earth](https://github.com/PJijin/Save-Earth/blob/master/preview.png?raw=true 'Save Earth')]()
+
+
+[![ClimateStrike](https://digital.globalclimatestrike.net/wp-content/uploads/sites/71/2019/08/FacebookShareImage-1024x536.png 'Save Earth')]()
+
+
+[![ClimateStrike](https://github.com/PJijin/Save-Earth/blob/master/preview.png?raw=true 'Save Earth')]()
 
 Project URL: http://save-earth.now.sh
 
