@@ -26,6 +26,9 @@ export default function Home() {
 	};
 	return (
 		<SettingsContext.Provider value={settings}>
+			<div>
+		<a href="https://digital.globalclimatestrike.net"><img src="https://digital.globalclimatestrike.net/wp-content/uploads/sites/71/2019/08/Banner-970x90.png" /></a>		
+			</div>
 			<div className="app">
 				<Options changeSettings={updateSettings} toggleMode={darkMode.toggle} currentMode={darkMode}></Options>
 				<Results settings={settings}></Results>
